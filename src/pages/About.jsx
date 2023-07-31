@@ -61,22 +61,22 @@ const About = () => {
         <h2 className="text-4xl font-bold tracking-wider">ABOUT</h2>
         <span className="h-1 w-16 bg-darkBlue inline-block"></span>
       </div>
-      <div className="flex">
+      <div className="flex flex-wrap">
         {/* Part of image and bio */}
-        <div className="w-1/2">
+        <div className="sm:w-1/2 w-full p-5">
           <img
             src="../../public/portfolio_img.jpg"
             alt="Portfolio image"
             className="w-52 h-52 rounded-full mx-auto mb-5"
           />
-          <h3 className="mx-auto text-darkBlue text-center text-sm font-bold">
+          <h3 className="mx-auto text-darkBlue text-center text-sm font-bold mb-5">
             I’m a Full-stack web developer based in Kaunas, Lithuania. I enjoy
             coding, solving problems and of course, I enjoy making beautiful and
             functional websites.
           </h3>
         </div>
         {/* Part of skills slider */}
-        <div className="w-1/2">
+        <div className="sm:w-1/2 w-full">
           <div className="w-80 h-64 bg-lightBlue mx-auto rounded-3xl p-2 ">
             {/* Actual slider code down below */}
             <div className="h-12 rounded-3xl flex bg-darkBlue">
