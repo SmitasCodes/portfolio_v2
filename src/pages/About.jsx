@@ -56,7 +56,7 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-white min-h-screen w-full max-w-screen-md mx-auto p-5">
+    <div className="bg-white min-h-screen w-full max-w-screen-md mx-auto p-5" id="about">
       <div className="mx-auto text-center my-20">
         <h2 className="text-4xl font-bold tracking-wider">ABOUT</h2>
         <span className="h-1 w-16 bg-darkBlue inline-block"></span>

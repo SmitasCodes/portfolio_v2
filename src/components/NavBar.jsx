@@ -23,6 +23,7 @@ const NavBar = () => {
               <a
                 href={section.href}
                 className=" text-white text-base font-thin hover:text-lightOrange transition duration-300"
+                onClick={() => setIsOpen(false)}
               >
                 {section.title}
               </a>

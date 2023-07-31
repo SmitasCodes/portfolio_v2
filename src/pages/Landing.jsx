@@ -2,7 +2,7 @@ import React from "react";
 
 const Landing = () => {
   return (
-    <div className="flex w-full h-screen items-center justify-center text-center bg-lightBlue">
+    <div className="flex w-full h-screen items-center justify-center text-center bg-lightBlue" id="home">
       <div>
         <h2
           className="text-white text-lg sm:text-3xl mb-3
