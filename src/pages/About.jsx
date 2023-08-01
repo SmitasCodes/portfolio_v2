@@ -11,16 +11,20 @@ const About = () => {
   // Array of objects of technologies I know
   const frontEndIcons = [
     {
+      class: "devicon-html5-plain",
+      title: "HTML5",
+    },
+    {
       class: "devicon-css3-plain",
       title: "CSS3",
     },
     {
-      class: "devicon-tailwindcss-plain",
-      title: "Tailwind CSS",
+      class: "devicon-bootstrap-plain",
+      title: "Bootstrap",
     },
     {
-      class: "devicon-html5-plain",
-      title: "HTML5",
+      class: "devicon-tailwindcss-plain",
+      title: "Tailwind CSS",
     },
     {
       class: "devicon-javascript-plain",
@@ -29,10 +33,6 @@ const About = () => {
     {
       class: "devicon-react-original",
       title: "React",
-    },
-    {
-      class: "devicon-bootstrap-plain",
-      title: "Bootstrap",
     },
   ];
 
@@ -56,7 +56,10 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-white min-h-screen w-full max-w-screen-md mx-auto p-5" id="about">
+    <div
+      className="bg-white min-h-screen w-full max-w-screen-md mx-auto p-5"
+      id="about"
+    >
       <div className="mx-auto text-center my-20">
         <h2 className="text-4xl font-bold tracking-wider">ABOUT</h2>
         <span className="h-1 w-16 bg-darkBlue inline-block"></span>
@@ -110,7 +113,10 @@ const About = () => {
               {activeTab === "front"
                 ? frontEndIcons.map((icon) => {
                     return (
-                      <div className="w-1/4 text-center h-1/3 flex items-center justify-center">
+                      <div
+                        className="w-1/4 text-center h-1/3 flex items-center justify-center"
+                        key={icon.title}
+                      >
                         <i
                           className={`${icon.class} text-white text-5xl`}
                           title={icon.title}
@@ -120,7 +126,10 @@ const About = () => {
                   })
                 : backEndIcons.map((icon) => {
                     return (
-                      <div className="w-1/4 text-center h-1/3 flex items-center justify-center">
+                      <div
+                        className="w-1/4 text-center h-1/3 flex items-center justify-center"
+                        key={icon.title}
+                      >
                         <i
                           className={`${icon.class} text-white text-5xl`}
                           title={icon.title}
