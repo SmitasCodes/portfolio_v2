@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-lightBlue">
       <div className={`bg-lightGray ${styles.triangle}`}></div>
-      <div className=" w-full p-5 max-w-sm  mx-auto bg-lightBlue">
+      <div className=" w-full px-5 py-12 max-w-sm  mx-auto bg-lightBlue">
         {/* Title part of a section */}
         <div className="mx-auto text-center my-20">
           <h2

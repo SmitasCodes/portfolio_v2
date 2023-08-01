@@ -13,10 +13,10 @@ const About = () => {
 
   return (
     <section
-      className="bg-white min-h-screen w-full max-w-screen-md mx-auto p-5"
+      className="bg-white w-full max-w-screen-md mx-auto px-5 py-24"
       id="about"
     >
-      <div className="mx-auto text-center my-20">
+      <div className="mx-auto text-center mb-10">
         <h2
           className="text-4xl font-bold tracking-wider"
           data-aos="slide-right"
@@ -42,7 +42,7 @@ const About = () => {
             alt="Portfolio image"
             className="w-52 h-52 rounded-full mx-auto mb-5"
           />
-          <h3 className="mx-auto text-darkBlue text-center text-sm font-bold mb-5">
+          <h3 className="mx-auto text-darkBlue text-center text-sm font-bold ">
             I’m a Full-stack web developer based in Kaunas, Lithuania. I enjoy
             coding, solving problems and of course, I enjoy making beautiful and
             functional websites.

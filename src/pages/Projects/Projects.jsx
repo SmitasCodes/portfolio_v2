@@ -5,9 +5,9 @@ import { projectsData } from "./ProjectsData/projectsData";
 const Projects = () => {
   return (
     <section className="bg-lightGray" id="projects">
-      <div className="min-h-screen w-full p-5 max-w-screen-md mx-auto">
+      <div className="w-full px-5 py-24 max-w-screen-md mx-auto">
         {/* Title part of a section */}
-        <div className="mx-auto text-center my-20" >
+        <div className="mx-auto text-center mb-10 " >
           <h2
             className="text-4xl font-bold tracking-wider"
             data-aos="slide-left"
@@ -16,7 +16,7 @@ const Projects = () => {
             PROJECTS
           </h2>
           <span
-            className="h-1 w-16 bg-darkBlue inline-block"
+            className="h-1 w-16 bg-darkBlue inline-block "
             data-aos="zoom-in"
             data-aos-duration="800"
           ></span>
