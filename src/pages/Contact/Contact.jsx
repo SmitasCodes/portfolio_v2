@@ -1,10 +1,10 @@
 import React from "react";
-import "./bbz.css";
+import styles from "./triangle.module.css";
 
 const Contact = () => {
   return (
     <section id="contact" className="bg-lightBlue">
-      <div id="bbz" className="bg-lightGray"></div>
+      <div className={`bg-lightGray ${styles.triangle}`}></div>
       <div className=" w-full p-5 max-w-screen-md mx-auto bg-lightBlue">
         {/* Title part of a section */}
         <div className="mx-auto text-center my-20">
@@ -38,6 +38,7 @@ const Contact = () => {
                 rows="10"
                 className="w-full py-1 px-2 resize-none bg-darkBlue text-white mb-1"
                 placeholder="Your message"
+                required
               ></textarea>
             </div>
             <div className="flex justify-end">

@@ -1,4 +1,4 @@
-#bbz {
+.triangle {
   clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%, 0 0%);
   position: relative;
   height: 60px;
