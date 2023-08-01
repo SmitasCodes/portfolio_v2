@@ -16,3 +16,7 @@ body {
   font-family: monospace, Arial, Helvetica;
   color: #0D0E42;
 }
+
+.active{
+  color: #F64C72;
+}

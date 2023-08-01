@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import menuIcon from "./menu-icon.svg";
+import { handleScroll } from "./scroll";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +11,10 @@ const NavBar = () => {
     { title: "PROJECTS", href: "#projects" },
     { title: "CONTACT", href: "#contact" },
   ];
+
+  useEffect(() => {
+    handleScroll();
+  }, []);
 
   return (
     <nav className="sticky top-[-1px] z-20">
@@ -23,7 +28,7 @@ const NavBar = () => {
             <li key={section.title} className="sm:ml-8 text-xl">
               <a
                 href={section.href}
-                className=" text-white text-base font-thin hover:text-lightOrange transition duration-300"
+                className=" text-white text-base font-thin hover:text-lightOrange transition duration-30"
                 onClick={() => setIsOpen(false)}
               >
                 {section.title}
@@ -36,11 +41,7 @@ const NavBar = () => {
           className="ml-auto mr-2 sm:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <img
-            src={menuIcon}
-            alt="menu-icon"
-            className="w-7 h-5"
-          />
+          <img src={menuIcon} alt="menu-icon" className="w-7 h-5" />
         </button>
       </div>
     </nav>

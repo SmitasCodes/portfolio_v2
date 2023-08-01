@@ -36,7 +36,7 @@ const Contact = () => {
               <textarea
                 cols="30"
                 rows="10"
-                className="w-full py-1 px-2 resize-none bg-darkBlue text-white mb-1"
+                className="w-full py-1 px-2 resize-none bg-darkBlue text-white mb-1 outline-none"
                 placeholder="Your message"
                 required
               ></textarea>
@@ -44,7 +44,7 @@ const Contact = () => {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="border-2 border-white text-white mb-5 px-2 hover:bg-white transition-colors duration-500"
+                className="border-2 border-white text-white mb-5 px-2 hover:bg-white hover:text-darkBlue transition-colors duration-500"
               >
                 SUBMIT
               </button>

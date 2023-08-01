@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <div
+    <section
       className="bg-white min-h-screen w-full max-w-screen-md mx-auto p-5"
       id="about"
     >
@@ -97,7 +97,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

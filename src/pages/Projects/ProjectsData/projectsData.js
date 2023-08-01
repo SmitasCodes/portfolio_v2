@@ -8,7 +8,7 @@ export const projectsData = [
     image2: new URL("./ImageSearch/cube_dark.jpg", import.meta.url).href,
   },
   {
-    title: "Example",
+    title: "Examplee",
     technologies: "React",
     description: "I don`t know what I'm talking aboutttttttttttttttttttttt s",
     coverImage: new URL("./ImageSearch/cube_dark.jpg", import.meta.url).href,
@@ -16,7 +16,7 @@ export const projectsData = [
     image2: new URL("./ImageSearch/cube_dark.jpg", import.meta.url).href,
   },
   {
-    title: "Example",
+    title: "Exampleee",
     technologies: "React",
     description: "I don`t know what I'm talking aboutttttttttttttttttttttt s",
     coverImage: new URL("./ImageSearch/cube_dark.jpg", import.meta.url).href,
@@ -24,7 +24,7 @@ export const projectsData = [
     image2: new URL("./ImageSearch/cube_dark.jpg", import.meta.url).href,
   },
   {
-    title: "Example",
+    title: "Exampl",
     technologies: "React",
     description: "I don`t know what I'm talking aboutttttttttttttttttttttt s",
     coverImage: new URL("./ImageSearch/cube_dark.jpg", import.meta.url).href,
@@ -32,7 +32,7 @@ export const projectsData = [
     image2: new URL("./ImageSearch/cube_dark.jpg", import.meta.url).href,
   },
   {
-    title: "Example",
+    title: "Examp",
     technologies: "React",
     description: "I don`t know what I'm talking aboutttttttttttttttttttttt s",
     coverImage: new URL("./ImageSearch/cube_dark.jpg", import.meta.url).href,
@@ -40,7 +40,7 @@ export const projectsData = [
     image2: new URL("./ImageSearch/cube_dark.jpg", import.meta.url).href,
   },
   {
-    title: "Example",
+    title: "Exam",
     technologies: "React",
     description: "I don`t know what I'm talking aboutttttttttttttttttttttt s",
     coverImage: new URL("./ImageSearch/cube_dark.jpg", import.meta.url).href,

@@ -4,7 +4,7 @@ import { projectsData } from "./ProjectsData/projectsData";
 
 const Projects = () => {
   return (
-    <div className="bg-lightGray" id="projects">
+    <section className="bg-lightGray" id="projects">
       <div className="min-h-screen w-full p-5 max-w-screen-md mx-auto">
         {/* Title part of a section */}
         <div className="mx-auto text-center my-20">
@@ -15,14 +15,14 @@ const Projects = () => {
         <div className="flex flex-wrap">
           {projectsData.map((project) => {
             return (
-              <Card>
+              <Card key={project.title}>
                 <img
                   src={project.coverImage}
                   alt={project.title}
                   className="w-full max-w-sm h-full transition-opacity duration-700 group-hover:opacity-0"
                 />
 
-                <div class="absolute inset-0 flex flex-col justify-center items-center transition-transform duration-700 group">
+                <div className="absolute inset-0 flex flex-col justify-center items-center transition-transform duration-700 group">
                   <div
                     className=" -translate-y-20 group-hover:-translate-y-10
           group-hover:opacity-100 transition duration-700 opacity-0 text-center"
@@ -44,7 +44,7 @@ const Projects = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

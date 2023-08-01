@@ -2,7 +2,7 @@ import React from "react";
 
 const Landing = () => {
   return (
-    <div className="flex w-full h-screen items-center justify-center text-center bg-lightBlue " id="home">
+    <section className="flex w-full h-screen items-center justify-center text-center bg-lightBlue " id="home">
       <div>
         <h2
           className="text-white text-lg sm:text-3xl mb-4
@@ -15,7 +15,7 @@ const Landing = () => {
           View my work <span className="group-hover:rotate-90 inline-block text-lg transition-transform duration-500">{"\u2192"}</span>
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 
