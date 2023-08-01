@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import menuIcon from "./menu-icon.svg";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="sticky top-0">
+    <nav className="sticky top-[-1px] z-20">
       <div className="flex items-center justify-between h-10 bg-darkBlue border-lightOrange border-b-2 relative">
         <ul
           className={`sm:flex sm:w-full sm:max-w-4xl sm:mx-auto sm:top-1/2 sm:transform sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 transition-all ease-in text-center  w-full absolute bg-darkBlue ${
@@ -36,7 +37,7 @@ const NavBar = () => {
           onClick={() => setIsOpen(!isOpen)}
         >
           <img
-            src="../../public/menu-icon.svg"
+            src={menuIcon}
             alt="menu-icon"
             className="w-7 h-5"
           />

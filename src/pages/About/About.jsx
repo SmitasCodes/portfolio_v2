@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import portfolioImage from "./AboutData/portfolio_img.jpg";
+import { frontEndIcons } from "./AboutData/frontEndIcons";
+import { backEndIcons } from "./AboutData/backEndIcons";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("front");
@@ -7,53 +10,6 @@ const About = () => {
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
-
-  // Array of objects of technologies I know
-  const frontEndIcons = [
-    {
-      class: "devicon-html5-plain",
-      title: "HTML5",
-    },
-    {
-      class: "devicon-css3-plain",
-      title: "CSS3",
-    },
-    {
-      class: "devicon-bootstrap-plain",
-      title: "Bootstrap",
-    },
-    {
-      class: "devicon-tailwindcss-plain",
-      title: "Tailwind CSS",
-    },
-    {
-      class: "devicon-javascript-plain",
-      title: "JavaScript",
-    },
-    {
-      class: "devicon-react-original",
-      title: "React",
-    },
-  ];
-
-  const backEndIcons = [
-    {
-      class: "devicon-nodejs-plain",
-      title: "Node.js",
-    },
-    {
-      class: "devicon-express-original",
-      title: "Express",
-    },
-    {
-      class: "devicon-mongodb-plain",
-      title: "MongoDB",
-    },
-    {
-      class: "devicon-firebase-plain",
-      title: "Firebase",
-    },
-  ];
 
   return (
     <div
@@ -68,7 +24,7 @@ const About = () => {
         {/* Part of image and bio */}
         <div className="sm:w-1/2 w-full p-5">
           <img
-            src="../../public/portfolio_img.jpg"
+            src={portfolioImage}
             alt="Portfolio image"
             className="w-52 h-52 rounded-full mx-auto mb-5"
           />

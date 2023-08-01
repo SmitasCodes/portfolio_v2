@@ -14,7 +14,7 @@ const Contact = () => {
           <span className="h-1 w-16 bg-white inline-block "></span>
           <h3 className="text-lightOrange text-base mt-2">Get in touch!</h3>
         </div>
-        <div className="mx-auto sm:px-0 px-5">
+        <div className="mx-auto sm:px-0 px-1">
           <form>
             <div>
               <input
@@ -44,7 +44,7 @@ const Contact = () => {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className=" border-2 border-white text-white mb-5 px-2 hover:bg-white hover:text-darkBlue transition-all duration 500"
+                className="border-2 border-white text-white mb-5 px-2 hover:bg-white transition-colors duration-500"
               >
                 SUBMIT
               </button>
