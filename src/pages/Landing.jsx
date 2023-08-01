@@ -2,18 +2,18 @@ import React from "react";
 
 const Landing = () => {
   return (
-    <div className="flex w-full h-screen items-center justify-center text-center bg-lightBlue" id="home">
+    <div className="flex w-full h-screen items-center justify-center text-center bg-lightBlue " id="home">
       <div>
         <h2
-          className="text-white text-lg sm:text-3xl mb-3
+          className="text-white text-lg sm:text-3xl mb-4
         "
         >
-          Hello, I’m <span className="text-lightOrange ">Airidas Šmitas</span>.
+          Hello, I’m <span className="text-lightOrange">Airidas Šmitas</span>.
           <br /> I’m a full-stack web developer.
         </h2>
-        <button className="text-lightOrange text-sm sm:text-base px-4 py-1 border-solid border-2 border-lightOrange">
-          View my work {"\u2192"}
-        </button>
+        <a className="text-lightOrange text-sm sm:text-base px-4 py-1 border-solid border-2 border-lightOrange inline-block group transition-colors duration-500 hover:text-white hover:bg-lightOrange" href="#projects">
+          View my work <span className="group-hover:rotate-90 inline-block text-lg transition-transform duration-500">{"\u2192"}</span>
+        </a>
       </div>
     </div>
   );
