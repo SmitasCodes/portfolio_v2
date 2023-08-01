@@ -8,14 +8,28 @@ const Contact = () => {
       <div className=" w-full p-5 max-w-sm  mx-auto bg-lightBlue">
         {/* Title part of a section */}
         <div className="mx-auto text-center my-20">
-          <h2 className="text-4xl font-bold tracking-wider text-white">
+          <h2
+            className="text-4xl font-bold tracking-wider text-white"
+            data-aos="slide-right"
+            data-aos-duration="800"
+          >
             CONTACT
           </h2>
-          <span className="h-1 w-16 bg-white inline-block "></span>
-          <h3 className="text-lightOrange text-base mt-2">Get in touch!</h3>
+          <span
+            className="h-1 w-16 bg-white inline-block "
+            data-aos="zoom-in"
+            data-aos-duration="800"
+          ></span>
+          <h3
+            className="text-lightOrange text-base mt-2"
+            data-aos="slide-left"
+            data-aos-duration="800"
+          >
+            Get in touch!
+          </h3>
         </div>
         <div className="mx-auto sm:px-0 px-1">
-          <form>
+          <form data-aos="slide-right" data-aos-duration="800">
             <div>
               <input
                 type="text"

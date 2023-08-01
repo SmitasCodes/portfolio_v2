@@ -7,12 +7,23 @@ const Projects = () => {
     <section className="bg-lightGray" id="projects">
       <div className="min-h-screen w-full p-5 max-w-screen-md mx-auto">
         {/* Title part of a section */}
-        <div className="mx-auto text-center my-20">
-          <h2 className="text-4xl font-bold tracking-wider">PROJECTS</h2>
-          <span className="h-1 w-16 bg-darkBlue inline-block"></span>
+        <div className="mx-auto text-center my-20" >
+          <h2
+            className="text-4xl font-bold tracking-wider"
+            data-aos="slide-left"
+            data-aos-duration="800"
+          >
+            PROJECTS
+          </h2>
+          <span
+            className="h-1 w-16 bg-darkBlue inline-block"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+          ></span>
         </div>
         {/* Flex container containg all the projects */}
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap" data-aos="slide-right"
+          data-aos-duration="800">
           {projectsData.map((project) => {
             return (
               <Card key={project.title}>

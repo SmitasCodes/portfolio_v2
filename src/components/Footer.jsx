@@ -3,7 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-darkBlue ">
-      <div className="w-full max-w-sm h-full mx-auto">
+      <div
+        className="w-full max-w-sm h-full mx-auto "
+        data-aos="zoom-in"
+        data-aos-duration="1200"
+      >
         {/* div where logos of my socials are stored */}
         <div className="text-center pt-8 text-white text-4xl mb-3">
           <a href="https://github.com/SmitasCodes/" target="_blank">

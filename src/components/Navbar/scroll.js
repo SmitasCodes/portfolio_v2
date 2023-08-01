@@ -3,7 +3,7 @@ export function handleScroll() {
   let navLinks = document.querySelectorAll("nav ul li a");
 
   window.onscroll = () => {
-    const buffer = 50;
+    const buffer = 65;
     sections.forEach((sec) => {
       let top = window.scrollY;
       let offset = sec.offsetTop -buffer;
