@@ -19,13 +19,13 @@ const Projects = () => {
                 <img
                   src={project.coverImage}
                   alt={project.title}
-                  className="w-full max-w-sm h-full transition-opacity duration-500 group-hover:opacity-0"
+                  className="w-full max-w-sm h-full transition-opacity duration-700 group-hover:opacity-0"
                 />
 
-                <div class="absolute inset-0 flex flex-col justify-center items-center transition-transform duration-500 group">
+                <div class="absolute inset-0 flex flex-col justify-center items-center transition-transform duration-700 group">
                   <div
                     className=" -translate-y-20 group-hover:-translate-y-10
-          group-hover:opacity-100 transition duration-300 opacity-0 text-center"
+          group-hover:opacity-100 transition duration-700 opacity-0 text-center"
                   >
                     <h2 className="text-xl mb-1">{project.title}</h2>
                     <h3 className="text-lightOrange">{project.technologies}</h3>
@@ -34,7 +34,7 @@ const Projects = () => {
                   <button
                     className="text-lightOrange text-sm border-lightOrange border-2 px-4 py-1  translate-y-20 group-hover:translate-y-0 
           group-hover:opacity-100
-          transition duration-500 opacity-0 hover:bg-lightOrange hover:text-white"
+          transition duration-600 opacity-0 hover:bg-lightOrange hover:text-white"
                   >
                     LEARN MORE
                   </button>
@@ -49,3 +49,4 @@ const Projects = () => {
 };
 
 export default Projects;
+7;
