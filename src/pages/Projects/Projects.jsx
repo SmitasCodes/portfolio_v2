@@ -19,7 +19,7 @@ const Projects = () => {
                 <img
                   src={project.coverImage}
                   alt={project.title}
-                  className="w-full h-full transition-opacity duration-500 group-hover:opacity-0"
+                  className="w-full max-w-sm h-full transition-opacity duration-500 group-hover:opacity-0"
                 />
 
                 <div class="absolute inset-0 flex flex-col justify-center items-center transition-transform duration-500 group">
