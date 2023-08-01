@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-lightBlue">
       <div className={`bg-lightGray ${styles.triangle}`}></div>
-      <div className=" w-full p-5 max-w-screen-md mx-auto bg-lightBlue">
+      <div className=" w-full p-5 max-w-sm  mx-auto bg-lightBlue">
         {/* Title part of a section */}
         <div className="mx-auto text-center my-20">
           <h2 className="text-4xl font-bold tracking-wider text-white">
@@ -14,7 +14,7 @@ const Contact = () => {
           <span className="h-1 w-16 bg-white inline-block "></span>
           <h3 className="text-lightOrange text-base mt-2">Get in touch!</h3>
         </div>
-        <div className="max-w-sm mx-auto sm:px-0 px-5">
+        <div className="mx-auto sm:px-0 px-5">
           <form>
             <div>
               <input
