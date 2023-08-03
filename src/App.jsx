@@ -1,9 +1,9 @@
 import React from "react";
-import Landing from "./pages/Landing";
+import Landing from "./sections/Landing";
 import NavBar from "./components/Navbar/NavBar";
-import About from "./pages/About/About";
-import Projects from "./pages/Projects/Projects";
-import Contact from "./pages/Contact/Contact";
+import About from "./sections/About/About";
+import Projects from "./sections/Projects/Projects";
+import Contact from "./sections/Contact/Contact";
 import Footer from "./components/Footer";
 
 function App() {

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // All the controls of carousel
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;

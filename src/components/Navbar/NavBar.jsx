@@ -1,22 +1,17 @@
 import React, { useEffect, useState } from "react";
 import menuIcon from "./menu-icon.svg";
 import { handleScroll } from "./scroll";
+import { sections } from "./sections";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  let sections = [
-    { title: "HOME", href: "#home" },
-    { title: "ABOUT", href: "#about" },
-    { title: "PROJECTS", href: "#projects" },
-    { title: "CONTACT", href: "#contact" },
-  ];
 
   useEffect(() => {
     handleScroll();
   }, []);
 
   return (
+    // Navigation element
     <nav className="sticky top-[-1px] z-20">
       <div className="flex items-center justify-between h-10 bg-darkBlue border-lightOrange border-b-2 relative">
         <ul
@@ -24,6 +19,7 @@ const NavBar = () => {
             isOpen ? "top-[40px] " : "hidden"
           }`}
         >
+          {/* Mapping through sections array */}
           {sections.map((section) => (
             <li key={section.title} className="sm:ml-8 text-xl">
               <a

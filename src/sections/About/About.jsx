@@ -16,6 +16,7 @@ const About = () => {
       className="bg-white w-full max-w-screen-md mx-auto px-5 py-24"
       id="about"
     >
+      {/* About section header */}
       <div className="mx-auto text-center mb-10">
         <h2
           className="text-4xl font-bold tracking-wider"

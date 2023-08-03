@@ -8,7 +8,7 @@ const Footer = () => {
         data-aos="zoom-in"
         data-aos-duration="1200"
       >
-        {/* div where logos of my socials are stored */}
+        {/* Div where logos of my socials are stored */}
         <div className="text-center pt-8 text-white text-4xl mb-3">
           <a href="https://github.com/SmitasCodes/" target="_blank">
             <i
