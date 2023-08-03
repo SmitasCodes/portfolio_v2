@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import Card from "./Card";
 import { projectsData } from "./ProjectsData/projectsData";
-import Modal from "./Modal";
+import Modal from "./Modal/Modal";
 
 const Projects = () => {
   const [showModal, setShowModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  const modalStateHandler = (state) => {
-    setShowModal(state);
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
+  const openModal = (project) => {
+    setShowModal(true);
+    setSelectedProject(project);
   };
 
   return (
@@ -56,7 +62,9 @@ const Projects = () => {
                     className="text-lightOrange text-sm border-lightOrange border-2 px-4 py-1  translate-y-20 group-hover:translate-y-0 
           group-hover:opacity-100
           transition duration-600 opacity-0 hover:bg-lightOrange hover:text-white"
-                    onClick={() => setShowModal(true)}
+                    onClick={() => {
+                      openModal(project);
+                    }}
                   >
                     LEARN MORE
                   </button>
@@ -67,11 +75,9 @@ const Projects = () => {
         </div>
       </div>
       {/* Calling modal if it's true */}
-      {showModal ? (
-        <>
-          <Modal modalState={modalStateHandler} />
-        </>
-      ) : null}
+      {showModal && (
+        <Modal modalState={closeModal} modalProject={selectedProject} />
+      )}
     </section>
   );
 };
