@@ -107,10 +107,10 @@ const Contact = () => {
               {/* Changing button content and overall style depending if user submitted a message recently */}
               <button
                 type="submit"
-                className={`text-white mb-5 px-2 transition-all duration-500 w-20 h-7 ${
+                className={`text-white mb-5 px-2 transition-all duration-500 w-20 h-7 hover:text-darkBlue ${
                   isSubmitted
                     ? "border-none bg-emerald-600 text-center w-18"
-                    : "border-white group hover:bg-white border-2 group-hover:text-darkBlue"
+                    : "border-white group hover:bg-white border-2 "
                 }`}
               >
                 {isSubmitted ? <span>&#x2713;</span> : "SUBMIT"}

@@ -6,6 +6,7 @@ const Modal = ({ modalState, modalProject }) => {
   const [closing, setClosing] = useState(false);
   const modalRef = useRef(null);
 
+  // Setting state of closing and calling modolState after timeout is passed, timeout is just to finish animation
   const closingHandler = () => {
     setClosing(true);
     setTimeout(() => {
@@ -13,12 +14,14 @@ const Modal = ({ modalState, modalProject }) => {
     }, 295);
   };
 
+  // Function for canceling modal when we click outside of it
   const handleClickOutside = (event) => {
     if (modalRef.current && !modalRef.current.contains(event.target)) {
       closingHandler();
     }
   };
 
+  // Setting timeout for event listener , resolving bug when modal gets instaly canceled while trying to open it. Also clearing event listener once it gets canceled
   useEffect(() => {
     setTimeout(() => {
       document.addEventListener("click", handleClickOutside);

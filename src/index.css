@@ -8,15 +8,24 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: monospace, Arial, Helvetica;
-  color: #0D0E42;
+  color: #0d0e42;
 }
 
-.active{
-  color: #F64C72;
+.active {
+  color: #f64c72;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  border-bottom: 1px solid white;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #0d0e42 inset;
 }
