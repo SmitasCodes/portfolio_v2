@@ -8,9 +8,10 @@ export default {
         darkBlue: "#0D0E42",
         lightOrange: "#F64C72",
         lightGray: "#D9D9D9",
+        lightRose: "#99738E",
         extend: {},
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };

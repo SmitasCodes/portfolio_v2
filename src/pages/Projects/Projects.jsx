@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./Card";
 import { projectsData } from "./ProjectsData/projectsData";
+import Modal from "./Modal";
 
 const Projects = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const modalStateHandler = (state) => {
+    setShowModal(state);
+  };
+
   return (
     <section className="bg-lightGray" id="projects">
       <div className="w-full px-5 py-24 max-w-screen-md mx-auto">
         {/* Title part of a section */}
-        <div className="mx-auto text-center mb-10 " >
+        <div className="mx-auto text-center mb-10 ">
           <h2
             className="text-4xl font-bold tracking-wider"
             data-aos="slide-left"
@@ -22,8 +29,11 @@ const Projects = () => {
           ></span>
         </div>
         {/* Flex container containg all the projects */}
-        <div className="flex flex-wrap" data-aos="slide-right"
-          data-aos-duration="800">
+        <div
+          className="flex flex-wrap"
+          data-aos="slide-right"
+          data-aos-duration="800"
+        >
           {projectsData.map((project) => {
             return (
               <Card key={project.title}>
@@ -46,6 +56,7 @@ const Projects = () => {
                     className="text-lightOrange text-sm border-lightOrange border-2 px-4 py-1  translate-y-20 group-hover:translate-y-0 
           group-hover:opacity-100
           transition duration-600 opacity-0 hover:bg-lightOrange hover:text-white"
+                    onClick={() => setShowModal(true)}
                   >
                     LEARN MORE
                   </button>
@@ -55,6 +66,12 @@ const Projects = () => {
           })}
         </div>
       </div>
+      {/* Calling modal if it's true */}
+      {showModal ? (
+        <>
+          <Modal modalState={modalStateHandler} />
+        </>
+      ) : null}
     </section>
   );
 };

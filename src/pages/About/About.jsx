@@ -49,8 +49,11 @@ const About = () => {
           </h3>
         </div>
         {/* Part of skills slider */}
-        <div className="sm:w-1/2 w-full" data-aos="slide-left"
-          data-aos-duration="800">
+        <div
+          className="sm:w-1/2 w-full"
+          data-aos="slide-left"
+          data-aos-duration="800"
+        >
           <div className="w-80 h-64 bg-lightBlue mx-auto rounded-3xl p-2 ">
             {/* Actual slider code down below */}
             <div className="h-12 rounded-3xl flex bg-darkBlue">
@@ -89,7 +92,7 @@ const About = () => {
                         key={icon.title}
                       >
                         <i
-                          className={`${icon.class} text-white text-5xl`}
+                          className={`${icon.class} text-white text-5xl hover:text-lightRose transition-colors duration-300`}
                           title={icon.title}
                         ></i>
                       </div>
@@ -98,11 +101,11 @@ const About = () => {
                 : backEndIcons.map((icon) => {
                     return (
                       <div
-                        className="w-1/4 text-center h-1/3 flex items-center justify-center"
+                        className="w-1/4 text-center h-1/3 flex items-center justify-center "
                         key={icon.title}
                       >
                         <i
-                          className={`${icon.class} text-white text-5xl`}
+                          className={`${icon.class} text-white text-5xl hover:text-lightRose transition-colors duration-300`}
                           title={icon.title}
                         ></i>
                       </div>

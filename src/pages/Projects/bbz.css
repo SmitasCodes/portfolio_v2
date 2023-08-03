@@ -1,0 +1,29 @@
+@keyframes modal-in-scale {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes modal-out-scale {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.animate-modal-in-scale {
+  animation: modal-in-scale 0.3s ease-in-out;
+}
+
+.animate-modal-out-scale {
+  animation: modal-out-scale 0.3s ease-in-out;
+}
