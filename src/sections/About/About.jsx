@@ -20,7 +20,7 @@ const About = () => {
       <div className="mx-auto text-center mb-10">
         <h2
           className="text-4xl font-bold tracking-wider"
-          data-aos="slide-right"
+          data-aos="zoom-in"
           data-aos-duration="800"
         >
           ABOUT
@@ -28,16 +28,16 @@ const About = () => {
         <span
           className="h-1 w-16 bg-darkBlue inline-block"
           data-aos="zoom-in"
-          data-aos-duration="800"
+          data-aos-duration="700"
         ></span>
       </div>
-      <div className="flex flex-wrap">
+      <div
+        className="flex flex-wrap "
+        data-aos="fade-up"
+        data-aos-duration="900"
+      >
         {/* Part of image and bio */}
-        <div
-          className="sm:w-1/2 w-full p-5"
-          data-aos="slide-right"
-          data-aos-duration="800"
-        >
+        <div className="sm:w-1/2 w-full p-5">
           <img
             src={portfolioImage}
             alt="Portfolio image"
@@ -52,8 +52,6 @@ const About = () => {
         {/* Part of skills slider */}
         <div
           className="sm:w-1/2 w-full"
-          data-aos="slide-left"
-          data-aos-duration="800"
         >
           <div className="w-80 h-64 bg-lightBlue mx-auto rounded-3xl p-2 ">
             {/* Actual slider code down below */}

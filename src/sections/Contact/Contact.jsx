@@ -44,7 +44,7 @@ const Contact = () => {
         <div className="mx-auto text-center my-20">
           <h2
             className="text-4xl font-bold tracking-wider text-white"
-            data-aos="slide-right"
+            data-aos="zoom-in"
             data-aos-duration="800"
           >
             CONTACT
@@ -52,12 +52,12 @@ const Contact = () => {
           <span
             className="h-1 w-16 bg-white inline-block "
             data-aos="zoom-in"
-            data-aos-duration="800"
+            data-aos-duration="700"
           ></span>
           <h3
             className="text-lightOrange text-base mt-2"
-            data-aos="slide-left"
-            data-aos-duration="800"
+            data-aos="zoom-in"
+            data-aos-duration="900"
           >
             Get in touch!
           </h3>
@@ -65,8 +65,8 @@ const Contact = () => {
         <div className="mx-auto sm:px-0 px-1">
           {/* Form element */}
           <form
-            data-aos="slide-right"
-            data-aos-duration="800"
+            data-aos="fade-up"
+            data-aos-duration="900"
             onSubmit={handleSubmit}
           >
             <div>
