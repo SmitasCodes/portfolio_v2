@@ -23,7 +23,7 @@ const Projects = () => {
         <div className="mx-auto text-center mb-10 ">
           <h2
             className="text-4xl font-bold tracking-wider"
-            data-aos="slide-left"
+            data-aos="zoom-in"
             data-aos-duration="800"
           >
             PROJECTS
@@ -31,14 +31,14 @@ const Projects = () => {
           <span
             className="h-1 w-16 bg-darkBlue inline-block "
             data-aos="zoom-in"
-            data-aos-duration="800"
+            data-aos-duration="700"
           ></span>
         </div>
         {/* Flex container containg all the projects */}
         <div
           className="flex flex-wrap"
-          data-aos="slide-right"
-          data-aos-duration="800"
+          data-aos="fade-up"
+          data-aos-duration="900"
         >
           {projectsData.map((project) => {
             return (
@@ -83,4 +83,4 @@ const Projects = () => {
 };
 
 export default Projects;
-7;
+

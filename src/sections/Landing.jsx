@@ -4,7 +4,7 @@ const Landing = () => {
   return (
     // Landing section
     <section
-      className="flex w-full h-screen items-center justify-center text-center bg-lightBlue "
+      className="flex w-full h-screen items-center justify-center text-center bg-lightBlue"
       id="home"
     >
       <div>
