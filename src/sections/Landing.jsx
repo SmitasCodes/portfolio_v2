@@ -13,7 +13,7 @@ const Landing = () => {
         "
         >
           Hello, I’m <span className="text-lightOrange">Airidas Šmitas</span>.
-          <br /> I’m a full-stack web developer.
+          <br /> I’m a front-end web developer.
         </h2>
         <a
           className="text-lightOrange text-sm sm:text-base px-4 py-1 border-solid border-2 border-lightOrange inline-block group transition-colors duration-500 hover:text-white hover:bg-lightOrange"
