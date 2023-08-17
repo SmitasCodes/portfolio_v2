@@ -46,12 +46,12 @@ const Projects = () => {
                 <img
                   src={project.coverImage}
                   alt={project.title}
-                  className="w-full max-w-sm h-full transition-opacity duration-700 group-hover:opacity-0"
+                  className="w-full max-w-sm h-full transition-opacity duration-700 group-hover:opacity-0 object-cover"
                 />
 
                 <div className="absolute inset-0 flex flex-col justify-center items-center">
                   <div
-                    className=" -translate-y-20 group-hover:-translate-y-20
+                    className=" -translate-y-20 group-hover:-translate-y-10
           group-hover:opacity-100 transition duration-700 opacity-0 text-center "
                   >
                     <h2 className="text-xl mb-1">{project.title}</h2>

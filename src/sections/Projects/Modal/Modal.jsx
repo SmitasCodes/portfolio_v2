@@ -81,8 +81,8 @@ const Modal = ({ modalState, modalProject }) => {
           <Carousel images={modalProject.images} />
 
           {/* Description */}
-          <div className="p-2">
-            <p className="text-sm">{modalProject.description}</p>
+          <div className="px-2 py-4">
+            <p className="text-sm tracking-wide text-center font-semibold">{modalProject.description}</p>
           </div>
 
           {/* Repository and live preview buttons pages */}

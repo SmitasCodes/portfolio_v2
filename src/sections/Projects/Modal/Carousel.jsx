@@ -20,11 +20,14 @@ const Carousel = ({ images }) => {
     <div className="w-full m-auto relative group">
       {/* Displaying images */}
       <div
-        style={{ backgroundImage: `url(${images[currentIndex]})` }}
+        style={{
+          backgroundImage: `url(${images[currentIndex]})`,
+          backgroundSize: "contain",
+        }}
         className="w-full h-72 bg-center bg-cover duration-500"
       ></div>
       {/* Left Arrow */}
-      <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-1 bg-black/20 text-white cursor-pointer hover:scale-125 transition-transform duration-300">
+      <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-1 bg-black/20 text-white cursor-pointer  transition-transform duration-300">
         <svg
           className="w-4 h-4 dark:text-white"
           aria-hidden="true"
@@ -43,7 +46,7 @@ const Carousel = ({ images }) => {
         </svg>
       </div>
       {/* Right Arrow */}
-      <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer  hover:scale-125 transition-transform duration-300">
+      <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer   transition-transform duration-300">
         <svg
           className="w-4 h-4 dark:text-white"
           aria-hidden="true"
