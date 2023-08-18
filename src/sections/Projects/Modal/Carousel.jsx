@@ -23,14 +23,16 @@ const Carousel = ({ images }) => {
       </div>
       {/* Arrows */}
       <div className="absolute inset-0 flex items-center justify-between p-4">
-        <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer  transition-transform duration-300">
+        <div
+          className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full bg-black/20 text-white cursor-pointer  transition-transform duration-300 p-2"
+          onClick={prev} title="previous"
+        >
           <svg
-            className="w-4 h-4 dark:text-white"
+            className="w-4 h-4 dark:text-white "
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 6 10"
-            onClick={prev}
           >
             <path
               stroke="currentColor"
@@ -41,14 +43,16 @@ const Carousel = ({ images }) => {
             />
           </svg>
         </div>
-        <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer   transition-transform duration-300">
+        <div
+          className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer   transition-transform duration-300 "
+          onClick={next} title="next"
+        >
           <svg
             className="w-4 h-4 dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 6 10"
-            onClick={next}
           >
             <path
               stroke="currentColor"

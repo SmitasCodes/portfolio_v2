@@ -1,5 +1,6 @@
 .triangle {
-  clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%, 0 0%);
-  position: relative;
+  clip-path: polygon(0 0, 100% 0, 50% 100%, 0 0);
+  position: absolute;
   height: 60px;
+  width: 100%;
 }

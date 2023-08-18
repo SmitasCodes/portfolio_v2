@@ -37,9 +37,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-lightBlue">
-      <div className={`bg-lightGray ${styles.triangle}`}></div>
-      <div className=" w-full px-5 py-12 max-w-sm  mx-auto bg-lightBlue">
+    <section id="contact" className="bg-lightBlue relative">
+      <div className={`bg-lightGray sm:top-0 -top-px ${styles.triangle}`}></div>
+      <div className=" w-full px-5 py-12 max-w-sm  mx-auto bg-lightBlue ">
         {/* Contact section header */}
         <div className="mx-auto text-center my-20">
           <h2
