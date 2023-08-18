@@ -46,7 +46,7 @@ const Projects = () => {
                 <img
                   src={project.coverImage}
                   alt={project.title}
-                  className="w-full max-w-sm h-full transition-opacity duration-700 group-hover:opacity-0 object-cover"
+                  className="w-full max-w-sm h-full transition-opacity duration-700 group-hover:opacity-0 "
                 />
 
                 <div className="absolute inset-0 flex flex-col justify-center items-center">
