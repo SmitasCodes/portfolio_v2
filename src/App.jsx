@@ -1,5 +1,5 @@
 import React from "react";
-import Landing from "./sections/Landing";
+import Landing from "./sections/Landing/Landing";
 import NavBar from "./components/Navbar/NavBar";
 import About from "./sections/About/About";
 import Projects from "./sections/Projects/Projects";
@@ -9,12 +9,12 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Landing /> 
-       <NavBar />
-      <About /> 
+      <Landing />
+      <NavBar />
+      <About />
       <Projects />
       <Contact />
-      <Footer />  
+      <Footer />
     </>
   );
 }
