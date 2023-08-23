@@ -43,16 +43,15 @@ const About = () => {
             alt="Portfolio image"
             className="w-52 h-52 rounded-full mx-auto mb-5"
           />
-          <h3 className="mx-auto text-darkBlue text-center text-sm font-bold ">
-            I’m a Full-stack web developer based in Kaunas, Lithuania. I enjoy
-            coding, solving problems and of course, I enjoy making beautiful and
-            functional websites.
+          <h3 className="mx-auto text-darkBlue text-center text-sm font-bold leading-relaxed">
+            I am a full-stack web developer based in Kaunas, Lithuania, who
+            takes pleasure in coding, problem-solving, and, of course, creating
+            visually appealing and functional websites. You can find more
+            information about me in my <a href="https://airidas-smitas-cv.tiiny.site/" target="_blank" className="text-lightOrange hover:text-darkOrange transition-colors text-lg">Resume</a>.
           </h3>
         </div>
         {/* Part of skills slider */}
-        <div
-          className="sm:w-1/2 w-full"
-        >
+        <div className="sm:w-1/2 w-full">
           <div className="w-80 h-64 bg-lightBlue mx-auto rounded-3xl p-2 ">
             {/* Actual slider code down below */}
             <div className="h-12 rounded-3xl flex bg-darkBlue">
