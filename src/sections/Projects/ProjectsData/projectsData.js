@@ -1,5 +1,19 @@
 export const projectsData = [
   {
+    title: "Portfolio",
+    technologies: "React, Tailwind CSS",
+    description:
+      "Since I currently don't have many representable projects created with React, I've decided to include my portfolio as one of them.",
+    coverImage: new URL("./Portfolio/img_1.png", import.meta.url).href,
+    vercel: "https://airidas-smitas.vercel.app/",
+    github: "https://github.com/SmitasCodes/portfolio_v2",
+    images: [
+      new URL("./Portfolio/img_1.png", import.meta.url).href,
+      new URL("./Portfolio/img_2.png", import.meta.url).href,
+      new URL("./Portfolio/img_3.png", import.meta.url).href,
+    ],
+  },
+  {
     title: "All Countries",
     technologies: "Javascript",
     description:
