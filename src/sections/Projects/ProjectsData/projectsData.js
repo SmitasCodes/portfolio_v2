@@ -14,6 +14,22 @@ export const projectsData = [
     ],
   },
   {
+    title: "Events Page",
+    technologies: "React, Bootstrap, CSS",
+    description:
+      "This is a school project where we were tasked with creating a website where users can browse events and save them. There are two roles: admin and user. Every user can post events, but only admins can approve them. I was specifically tasked with developing most of the backend, implementing authentication on the page, setting up event filtering, and creating an admin panel. Although this page has numerous bugs, and I'm not particularly satisfied with its performance ,but since I put a lot of work into it, I decided to include it as one of my projects. ",
+    coverImage: new URL("./Events/img_1.png", import.meta.url).href,
+    vercel: "https://events-frontend-project.vercel.app/",
+    github: "https://linkmix.co/18368871",
+    images: [
+      new URL("./Events/img_1.png", import.meta.url).href,
+      new URL("./Events/img_2.png", import.meta.url).href,
+      new URL("./Events/img_3.png", import.meta.url).href,
+      new URL("./Events/img_4.png", import.meta.url).href,
+      new URL("./Events/img_5.png", import.meta.url).href,
+    ],
+  },
+  {
     title: "All Countries",
     technologies: "Javascript",
     description:
